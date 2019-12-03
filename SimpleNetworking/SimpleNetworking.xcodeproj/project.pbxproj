@@ -10,6 +10,11 @@
 		2C46F2AB2395F0C00094790D /* SimpleNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C46F2A12395F0C00094790D /* SimpleNetworking.framework */; };
 		2C46F2B02395F0C00094790D /* SimpleNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2AF2395F0C00094790D /* SimpleNetworkingTests.swift */; };
 		2C46F2B22395F0C00094790D /* SimpleNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C46F2A42395F0C00094790D /* SimpleNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C46F2EC2396A8C20094790D /* SimpleNetworkingValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2EB2396A8C20094790D /* SimpleNetworkingValidator.swift */; };
+		2C46F2F42396B94A0094790D /* SimpleNetworkingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2EF2396B9490094790D /* SimpleNetworkingErrors.swift */; };
+		2C46F2F62396B94A0094790D /* SimpleNetworkingResultBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F12396B94A0094790D /* SimpleNetworkingResultBlock.swift */; };
+		2C46F2F72396B94A0094790D /* SimpleNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F22396B94A0094790D /* SimpleNetworking.swift */; };
+		2C46F2F82396B94A0094790D /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F32396B94A0094790D /* Thread.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		2C46F2AA2395F0C00094790D /* SimpleNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C46F2AF2395F0C00094790D /* SimpleNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingTests.swift; sourceTree = "<group>"; };
 		2C46F2B12395F0C00094790D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C46F2EB2396A8C20094790D /* SimpleNetworkingValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingValidator.swift; sourceTree = "<group>"; };
+		2C46F2EF2396B9490094790D /* SimpleNetworkingErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingErrors.swift; sourceTree = "<group>"; };
+		2C46F2F12396B94A0094790D /* SimpleNetworkingResultBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingResultBlock.swift; sourceTree = "<group>"; };
+		2C46F2F22396B94A0094790D /* SimpleNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetworking.swift; sourceTree = "<group>"; };
+		2C46F2F32396B94A0094790D /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,7 @@
 		2C46F2A32395F0C00094790D /* SimpleNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				2C46F2EA2395F47A0094790D /* Source */,
 				2C46F2A42395F0C00094790D /* SimpleNetworking.h */,
 				2C46F2A52395F0C00094790D /* Info.plist */,
 			);
@@ -84,6 +95,18 @@
 				2C46F2B12395F0C00094790D /* Info.plist */,
 			);
 			path = SimpleNetworkingTests;
+			sourceTree = "<group>";
+		};
+		2C46F2EA2395F47A0094790D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2C46F2F22396B94A0094790D /* SimpleNetworking.swift */,
+				2C46F2EF2396B9490094790D /* SimpleNetworkingErrors.swift */,
+				2C46F2F12396B94A0094790D /* SimpleNetworkingResultBlock.swift */,
+				2C46F2F32396B94A0094790D /* Thread.swift */,
+				2C46F2EB2396A8C20094790D /* SimpleNetworkingValidator.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +167,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = "Luis Carlos Mejia Garcia";
+				ORGANIZATIONNAME = "Mejia Garcia";
 				TargetAttributes = {
 					2C46F2A02395F0C00094790D = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					2C46F2A92395F0C00094790D = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -195,6 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C46F2F62396B94A0094790D /* SimpleNetworkingResultBlock.swift in Sources */,
+				2C46F2F82396B94A0094790D /* Thread.swift in Sources */,
+				2C46F2F42396B94A0094790D /* SimpleNetworkingErrors.swift in Sources */,
+				2C46F2F72396B94A0094790D /* SimpleNetworking.swift in Sources */,
+				2C46F2EC2396A8C20094790D /* SimpleNetworkingValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +369,7 @@
 		2C46F2B62395F0C00094790D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J75TA62D6V;
@@ -348,6 +378,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SimpleNetworking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.SimpleNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +396,7 @@
 		2C46F2B72395F0C00094790D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J75TA62D6V;
@@ -372,6 +405,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SimpleNetworking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,6 +422,7 @@
 		2C46F2B92395F0C00094790D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J75TA62D6V;
 				INFOPLIST_FILE = SimpleNetworkingTests/Info.plist;
@@ -406,6 +441,7 @@
 		2C46F2BA2395F0C00094790D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J75TA62D6V;
 				INFOPLIST_FILE = SimpleNetworkingTests/Info.plist;
