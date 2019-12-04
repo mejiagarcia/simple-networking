@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2DCA1C23972C0000CE1A22 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2DCA1B23972C0000CE1A22 /* Encodable+Extensions.swift */; };
 		2C46F2AB2395F0C00094790D /* SimpleNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C46F2A12395F0C00094790D /* SimpleNetworking.framework */; };
 		2C46F2B02395F0C00094790D /* SimpleNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2AF2395F0C00094790D /* SimpleNetworkingTests.swift */; };
 		2C46F2B22395F0C00094790D /* SimpleNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C46F2A42395F0C00094790D /* SimpleNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C46F2EC2396A8C20094790D /* SimpleNetworkingValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2EB2396A8C20094790D /* SimpleNetworkingValidator.swift */; };
-		2C46F2F42396B94A0094790D /* SimpleNetworkingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2EF2396B9490094790D /* SimpleNetworkingErrors.swift */; };
-		2C46F2F62396B94A0094790D /* SimpleNetworkingResultBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F12396B94A0094790D /* SimpleNetworkingResultBlock.swift */; };
+		2C46F2EC2396A8C20094790D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2EB2396A8C20094790D /* Validator.swift */; };
+		2C46F2F42396B94A0094790D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2EF2396B9490094790D /* Errors.swift */; };
+		2C46F2F62396B94A0094790D /* ResultBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F12396B94A0094790D /* ResultBlocks.swift */; };
 		2C46F2F72396B94A0094790D /* SimpleNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F22396B94A0094790D /* SimpleNetworking.swift */; };
 		2C46F2F82396B94A0094790D /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F32396B94A0094790D /* Thread.swift */; };
+		2C46F2FA23971A990094790D /* SimpleNetworking+GetMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F923971A990094790D /* SimpleNetworking+GetMethods.swift */; };
+		2C61CE1D23971B5400382261 /* SimpleNetworking+PostMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61CE1C23971B5400382261 /* SimpleNetworking+PostMethods.swift */; };
+		2C61CE1F23971FEE00382261 /* RequestMethodTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61CE1E23971FEE00382261 /* RequestMethodTypes.swift */; };
+		2C61CE212397201600382261 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61CE202397201600382261 /* Requests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,17 +33,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C2DCA1B23972C0000CE1A22 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
 		2C46F2A12395F0C00094790D /* SimpleNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C46F2A42395F0C00094790D /* SimpleNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleNetworking.h; sourceTree = "<group>"; };
 		2C46F2A52395F0C00094790D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C46F2AA2395F0C00094790D /* SimpleNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C46F2AF2395F0C00094790D /* SimpleNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingTests.swift; sourceTree = "<group>"; };
 		2C46F2B12395F0C00094790D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C46F2EB2396A8C20094790D /* SimpleNetworkingValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingValidator.swift; sourceTree = "<group>"; };
-		2C46F2EF2396B9490094790D /* SimpleNetworkingErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingErrors.swift; sourceTree = "<group>"; };
-		2C46F2F12396B94A0094790D /* SimpleNetworkingResultBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingResultBlock.swift; sourceTree = "<group>"; };
+		2C46F2EB2396A8C20094790D /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		2C46F2EF2396B9490094790D /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		2C46F2F12396B94A0094790D /* ResultBlocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultBlocks.swift; sourceTree = "<group>"; };
 		2C46F2F22396B94A0094790D /* SimpleNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetworking.swift; sourceTree = "<group>"; };
 		2C46F2F32396B94A0094790D /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		2C46F2F923971A990094790D /* SimpleNetworking+GetMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleNetworking+GetMethods.swift"; sourceTree = "<group>"; };
+		2C61CE1C23971B5400382261 /* SimpleNetworking+PostMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleNetworking+PostMethods.swift"; sourceTree = "<group>"; };
+		2C61CE1E23971FEE00382261 /* RequestMethodTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethodTypes.swift; sourceTree = "<group>"; };
+		2C61CE202397201600382261 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C2DCA1A239727C800CE1A22 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C46F2F923971A990094790D /* SimpleNetworking+GetMethods.swift */,
+				2C61CE1C23971B5400382261 /* SimpleNetworking+PostMethods.swift */,
+				2C2DCA1B23972C0000CE1A22 /* Encodable+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2C46F2972395F0BF0094790D = {
 			isa = PBXGroup;
 			children = (
@@ -100,13 +120,24 @@
 		2C46F2EA2395F47A0094790D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2C2DCA1A239727C800CE1A22 /* Extensions */,
+				2C61CE1B23971AF600382261 /* Helpers */,
 				2C46F2F22396B94A0094790D /* SimpleNetworking.swift */,
-				2C46F2EF2396B9490094790D /* SimpleNetworkingErrors.swift */,
-				2C46F2F12396B94A0094790D /* SimpleNetworkingResultBlock.swift */,
-				2C46F2F32396B94A0094790D /* Thread.swift */,
-				2C46F2EB2396A8C20094790D /* SimpleNetworkingValidator.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		2C61CE1B23971AF600382261 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2C46F2F12396B94A0094790D /* ResultBlocks.swift */,
+				2C46F2EF2396B9490094790D /* Errors.swift */,
+				2C46F2EB2396A8C20094790D /* Validator.swift */,
+				2C46F2F32396B94A0094790D /* Thread.swift */,
+				2C61CE1E23971FEE00382261 /* RequestMethodTypes.swift */,
+				2C61CE202397201600382261 /* Requests.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,11 +250,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C46F2F62396B94A0094790D /* SimpleNetworkingResultBlock.swift in Sources */,
+				2C46F2F62396B94A0094790D /* ResultBlocks.swift in Sources */,
 				2C46F2F82396B94A0094790D /* Thread.swift in Sources */,
-				2C46F2F42396B94A0094790D /* SimpleNetworkingErrors.swift in Sources */,
+				2C61CE1F23971FEE00382261 /* RequestMethodTypes.swift in Sources */,
+				2C61CE212397201600382261 /* Requests.swift in Sources */,
+				2C46F2F42396B94A0094790D /* Errors.swift in Sources */,
 				2C46F2F72396B94A0094790D /* SimpleNetworking.swift in Sources */,
-				2C46F2EC2396A8C20094790D /* SimpleNetworkingValidator.swift in Sources */,
+				2C46F2EC2396A8C20094790D /* Validator.swift in Sources */,
+				2C2DCA1C23972C0000CE1A22 /* Encodable+Extensions.swift in Sources */,
+				2C61CE1D23971B5400382261 /* SimpleNetworking+PostMethods.swift in Sources */,
+				2C46F2FA23971A990094790D /* SimpleNetworking+GetMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

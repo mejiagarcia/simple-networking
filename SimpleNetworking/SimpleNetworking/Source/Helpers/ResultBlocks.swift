@@ -1,5 +1,5 @@
 //
-//  SimpleNetworkingResultBlock.swift
+//  ResultBlocks.swift
 //  SimpleNetworking
 //
 //  Created by Luis Carlos Mejia Garcia on 2/12/19.

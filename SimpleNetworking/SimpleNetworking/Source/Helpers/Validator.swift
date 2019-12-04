@@ -1,5 +1,5 @@
 //
-//  SimpleNetworkingValidator.swift
+//  Validator.swift
 //  SimpleNetworking
 //
 //  Created by Luis Carlos Mejia Garcia on 3/12/19.
