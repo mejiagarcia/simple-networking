@@ -2,9 +2,9 @@
 # Simple-Networking
 
 [![CI Status](https://travis-ci.org/mejiagarcia/simple-networking.svg?branch=master)](https://travis-ci.org/mejiagarcia/simple-networking)
-[![Version](https://img.shields.io/cocoapods/v/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/SimpleNetworking)
-[![License](https://img.shields.io/cocoapods/l/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/SimpleNetworking)
-[![Platform](https://img.shields.io/cocoapods/p/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/SimpleNetworking)
+[![Version](https://img.shields.io/cocoapods/v/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/Simple-Networking)
+[![License](https://img.shields.io/cocoapods/l/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/Simple-Networking)
+[![Platform](https://img.shields.io/cocoapods/p/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/Simple-Networking)
 
 Forget about all serialization logic, mappers and old networking stuff, Simple-Networking is build on top of **URLSession** and **Codable** protocol to make your life easier. 
 
