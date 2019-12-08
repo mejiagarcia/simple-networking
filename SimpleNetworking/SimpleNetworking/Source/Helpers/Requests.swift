@@ -9,13 +9,10 @@
 import Foundation
 
 class Requests {
-    static func getCreatedRequest(url: URL, model: Codable? = nil, method: RequestMethodTypes) -> URLRequest {
+    func getCreatedRequest(url: URL, model: Codable? = nil, method: RequestMethodTypes) -> URLRequest {
         var request = URLRequest(url: url)
         request.httpMethod = method.value
-        
-        SimpleNetworking.defaultHeaders.forEach {
-            request.setValue($0.value as? String, forHTTPHeaderField: $0.key as? String ?? "")
-        }
+        request.allHTTPHeaderFields = SimpleNetworking.defaultHeaders as? [String : String]
         
         request.httpBody = model?.toJSONData()
         

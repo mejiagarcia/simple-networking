@@ -20,7 +20,7 @@ extension SimpleNetworking {
             return
         }
         
-        let request = Requests.getCreatedRequest(url: url, method: .get)
+        let request = Requests().getCreatedRequest(url: url, method: .get)
         
         SimpleNetworking.currentTask = SimpleNetworking.session.dataTask(with: request) {
             (data: Data?, response: URLResponse?, error: Error?) in
@@ -65,7 +65,7 @@ extension SimpleNetworking {
             return
         }
         
-        let request = Requests.getCreatedRequest(url: url, method: .get)
+        let request = Requests().getCreatedRequest(url: url, method: .get)
         
         SimpleNetworking.currentTask = SimpleNetworking.session.dataTask(with: request) {
             (data: Data?, response: URLResponse?, error: Error?) in

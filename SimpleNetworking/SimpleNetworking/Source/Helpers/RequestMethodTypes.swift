@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum RequestMethodTypes: String {
+enum RequestMethodTypes: String, CaseIterable {
     case get
     case post
     case put

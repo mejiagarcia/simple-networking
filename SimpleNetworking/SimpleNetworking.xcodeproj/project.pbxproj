@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2C2DCA1C23972C0000CE1A22 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2DCA1B23972C0000CE1A22 /* Encodable+Extensions.swift */; };
 		2C46F2AB2395F0C00094790D /* SimpleNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C46F2A12395F0C00094790D /* SimpleNetworking.framework */; };
-		2C46F2B02395F0C00094790D /* SimpleNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2AF2395F0C00094790D /* SimpleNetworkingTests.swift */; };
 		2C46F2B22395F0C00094790D /* SimpleNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C46F2A42395F0C00094790D /* SimpleNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C46F2EC2396A8C20094790D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2EB2396A8C20094790D /* Validator.swift */; };
 		2C46F2F42396B94A0094790D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2EF2396B9490094790D /* Errors.swift */; };
@@ -20,6 +19,14 @@
 		2C61CE1D23971B5400382261 /* SimpleNetworking+PostMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61CE1C23971B5400382261 /* SimpleNetworking+PostMethods.swift */; };
 		2C61CE1F23971FEE00382261 /* RequestMethodTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61CE1E23971FEE00382261 /* RequestMethodTypes.swift */; };
 		2C61CE212397201600382261 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61CE202397201600382261 /* Requests.swift */; };
+		2CCE6E06239CAE830054693E /* RequestMethodTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE6E05239CAE830054693E /* RequestMethodTypesTests.swift */; };
+		2CCE6E09239CB05F0054693E /* EncodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE6E08239CB05F0054693E /* EncodableTests.swift */; };
+		2CCE6E0B239CB0860054693E /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE6E0A239CB0860054693E /* MockData.swift */; };
+		2CCE6E0D239CB1B10054693E /* SNErrorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE6E0C239CB1B10054693E /* SNErrorsTests.swift */; };
+		2CCE6E0F239CB9A10054693E /* RequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE6E0E239CB9A10054693E /* RequestsTests.swift */; };
+		2CCE6E11239CC4460054693E /* SimpleNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE6E10239CC4460054693E /* SimpleNetworkingTests.swift */; };
+		2CCE6E13239CC99C0054693E /* ThreadsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE6E12239CC99C0054693E /* ThreadsTests.swift */; };
+		2CCE6E15239CCA750054693E /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE6E14239CCA750054693E /* ValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,6 @@
 		2C46F2A42395F0C00094790D /* SimpleNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleNetworking.h; sourceTree = "<group>"; };
 		2C46F2A52395F0C00094790D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C46F2AA2395F0C00094790D /* SimpleNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C46F2AF2395F0C00094790D /* SimpleNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingTests.swift; sourceTree = "<group>"; };
 		2C46F2B12395F0C00094790D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C46F2EB2396A8C20094790D /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		2C46F2EF2396B9490094790D /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		2C61CE1C23971B5400382261 /* SimpleNetworking+PostMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleNetworking+PostMethods.swift"; sourceTree = "<group>"; };
 		2C61CE1E23971FEE00382261 /* RequestMethodTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethodTypes.swift; sourceTree = "<group>"; };
 		2C61CE202397201600382261 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		2CCE6E05239CAE830054693E /* RequestMethodTypesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethodTypesTests.swift; sourceTree = "<group>"; };
+		2CCE6E08239CB05F0054693E /* EncodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableTests.swift; sourceTree = "<group>"; };
+		2CCE6E0A239CB0860054693E /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		2CCE6E0C239CB1B10054693E /* SNErrorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNErrorsTests.swift; sourceTree = "<group>"; };
+		2CCE6E0E239CB9A10054693E /* RequestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsTests.swift; sourceTree = "<group>"; };
+		2CCE6E10239CC4460054693E /* SimpleNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingTests.swift; sourceTree = "<group>"; };
+		2CCE6E12239CC99C0054693E /* ThreadsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTests.swift; sourceTree = "<group>"; };
+		2CCE6E14239CCA750054693E /* ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +125,14 @@
 		2C46F2AE2395F0C00094790D /* SimpleNetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				2C46F2AF2395F0C00094790D /* SimpleNetworkingTests.swift */,
+				2CCE6E14239CCA750054693E /* ValidatorTests.swift */,
+				2CCE6E12239CC99C0054693E /* ThreadsTests.swift */,
+				2CCE6E10239CC4460054693E /* SimpleNetworkingTests.swift */,
+				2CCE6E0C239CB1B10054693E /* SNErrorsTests.swift */,
+				2CCE6E0A239CB0860054693E /* MockData.swift */,
+				2CCE6E08239CB05F0054693E /* EncodableTests.swift */,
+				2CCE6E05239CAE830054693E /* RequestMethodTypesTests.swift */,
+				2CCE6E0E239CB9A10054693E /* RequestsTests.swift */,
 				2C46F2B12395F0C00094790D /* Info.plist */,
 			);
 			path = SimpleNetworkingTests;
@@ -267,7 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C46F2B02395F0C00094790D /* SimpleNetworkingTests.swift in Sources */,
+				2CCE6E15239CCA750054693E /* ValidatorTests.swift in Sources */,
+				2CCE6E0D239CB1B10054693E /* SNErrorsTests.swift in Sources */,
+				2CCE6E11239CC4460054693E /* SimpleNetworkingTests.swift in Sources */,
+				2CCE6E13239CC99C0054693E /* ThreadsTests.swift in Sources */,
+				2CCE6E06239CAE830054693E /* RequestMethodTypesTests.swift in Sources */,
+				2CCE6E0B239CB0860054693E /* MockData.swift in Sources */,
+				2CCE6E09239CB05F0054693E /* EncodableTests.swift in Sources */,
+				2CCE6E0F239CB9A10054693E /* RequestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,13 +361,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -390,12 +419,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -423,6 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.SimpleNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,6 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.SimpleNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,11 +494,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J75TA62D6V;
 				INFOPLIST_FILE = SimpleNetworkingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.SimpleNetworkingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -481,11 +515,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J75TA62D6V;
 				INFOPLIST_FILE = SimpleNetworkingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.SimpleNetworkingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

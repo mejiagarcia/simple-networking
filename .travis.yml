@@ -1,0 +1,6 @@
+language: swift
+os: osx
+osx_image: xcode11.2
+xcode_project: SimpleNetworking/SimpleNetworking.xcodeproj
+xcode_scheme: SimpleNetworkingTests
+xcode_destination: platform=iOS Simulator,id=1AB2BB6F-A1DD-4FDF-B020-38FA6E8B95DA,OS=13.2.2

@@ -21,7 +21,7 @@ extension SimpleNetworking {
             return
         }
         
-        let request = Requests.getCreatedRequest(url: url, model: model, method: .post)
+        let request = Requests().getCreatedRequest(url: url, model: model, method: .post)
         
         SimpleNetworking.currentTask = SimpleNetworking.session.dataTask(with: request) {
             (data: Data?, response: URLResponse?, error: Error?) in
@@ -67,7 +67,7 @@ extension SimpleNetworking {
             return
         }
         
-        let request = Requests.getCreatedRequest(url: url, model: model, method: .post)
+        let request = Requests().getCreatedRequest(url: url, model: model, method: .post)
         
         SimpleNetworking.currentTask = SimpleNetworking.session.dataTask(with: request) {
             (data: Data?, response: URLResponse?, error: Error?) in

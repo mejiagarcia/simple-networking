@@ -16,6 +16,8 @@ public enum SNErrors: Error {
     case unknown(error: String?)
     
     var localizedDescription: String {
+        let unknownError = "Unknown error."
+        
         switch self {
         case .endpoint:
             return "Unable to convert the endpoint."
@@ -24,13 +26,13 @@ public enum SNErrors: Error {
             return "Unable to determinate a success response."
             
         case .custom(let error):
-            return error?.localizedDescription ?? ""
+            return error?.localizedDescription ?? unknownError
             
         case .emptyContent:
-            return "Empty content :c"
+            return "Empty content"
             
         case .unknown(let error):
-            return error ?? ""
+            return error ?? unknownError
         }
     }
 }

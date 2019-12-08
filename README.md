@@ -1,7 +1,7 @@
 
 # Simple-Networking
 
-[![CI Status](https://img.shields.io/travis/mejiagarcia/SimpleBinding.svg?style=flat)](https://travisci.org/mejiagarcia/SimpleNetworking)
+[![CI Status](https://travis-ci.org/mejiagarcia/simple-networking.svg?branch=master)](https://travisci.org/mejiagarcia/simple-networking)
 [![Version](https://img.shields.io/cocoapods/v/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/SimpleNetworking)
 [![License](https://img.shields.io/cocoapods/l/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/SimpleNetworking)
 [![Platform](https://img.shields.io/cocoapods/p/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/SimpleNetworking)
