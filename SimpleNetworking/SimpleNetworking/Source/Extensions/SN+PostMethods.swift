@@ -26,6 +26,7 @@ extension SN {
                                                     onCompletion: SNResultBlockWithError<T, Y>) {
         
         SimpleNetworking.dataRequestWithCustomResult(endpoint: endpoint,
+                                                     model: model,
                                                      method: .post,
                                                      onCompletion: onCompletion)
     }
