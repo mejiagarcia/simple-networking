@@ -27,6 +27,9 @@ pod 'Simple-Networking'
 ```
 
 ## Usage
+```swift
+import Simple_Networking
+ ```
 
 ### Perform a GET request with a Codable result.
 
