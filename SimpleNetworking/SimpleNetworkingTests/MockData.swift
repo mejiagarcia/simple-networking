@@ -19,6 +19,15 @@ struct MockData {
         }
     }
     
+    struct User: Codable {
+        let title: String
+        let userId: Int
+        
+        static var testInstance: User {
+             return User(title: "test title", userId: 1)
+         }
+    }
+    
     static let DefaultHeaders: NSMutableDictionary = [
         "Content-Type": "application/json"
     ]

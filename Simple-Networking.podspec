@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'Simple-Networking'
-    s.version          = '0.2.1'
+    s.version          = '0.3.0'
     s.summary          = 'A Simple and light way to perform a all your Network operations.'
     s.description      = 'We love the KISS principle, everything in Software should be simple and solid, this is how to apply this principle in your networking operations.'
     s.homepage         = 'https://github.com/mejiagarcia/simple-networking'

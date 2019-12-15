@@ -87,7 +87,7 @@ Perform your request to get the model number 1 in success case or model number 2
 let endpoint = "http://www.mocky.io/v2/5de68cd33700005a000924a4"
 
 // 2. Put your Codable type in the result block.
-SimpleNetworking.get(endpoint: endpoint) { [weak self] (response: SNResultWithEntity<User, ServerError>) in 
+SN.get(endpoint: endpoint) { [weak self] (response: SNResultWithEntity<User, ServerError>) in 
 	switch response {
 	// Regular error
 	case .error(let error):
@@ -127,7 +127,7 @@ let endpoint = "https://jsonplaceholder.typicode.com/posts"
 let request = User(title: "test title", userId: 99999)
 
 // 2. Make the request
-SimpleNetworking.post(endpoint: endpoint, model: request) { [weak self] (response: SNResult<User>) in
+SN.post(endpoint: endpoint, model: request) { [weak self] (response: SNResult<User>) in
 	switch response {
 	case .error(let error):
 		// 3. Hanlde the possible error.

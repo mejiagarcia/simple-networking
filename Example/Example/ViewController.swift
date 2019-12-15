@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         let endpoint = "https://jsonplaceholder.typicode.com/todos/1"
         
         // 2. Make the request
-        SimpleNetworking.get(endpoint: endpoint) { [weak self] (response: SNResult<User>) in
+        SN.get(endpoint: endpoint) { [weak self] (response: SNResult<User>) in
             
             switch response {
             case .error(let error):
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         // Endpoint with 404 response and error.
         let endpoint = "http://www.mocky.io/v2/5de68cd33700005a000924a4"
         
-        SimpleNetworking.get(endpoint: endpoint) { (response: SNResultWithEntity<User, ServerError>) in
+        SN.get(endpoint: endpoint) { (response: SNResultWithEntity<User, ServerError>) in
             
             switch response {
                 
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
         let request = User(title: "test title", userId: 99999)
         
         // 2. Make the request
-        SimpleNetworking.post(endpoint: endpoint, model: request) { [weak self] (response: SNResult<User>) in
+        SN.post(endpoint: endpoint, model: request) { [weak self] (response: SNResult<User>) in
             
             switch response {
             case .error(let error):

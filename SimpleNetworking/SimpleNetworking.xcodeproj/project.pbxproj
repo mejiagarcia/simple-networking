@@ -15,10 +15,13 @@
 		2C46F2F62396B94A0094790D /* ResultBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F12396B94A0094790D /* ResultBlocks.swift */; };
 		2C46F2F72396B94A0094790D /* SimpleNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F22396B94A0094790D /* SimpleNetworking.swift */; };
 		2C46F2F82396B94A0094790D /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F32396B94A0094790D /* Thread.swift */; };
-		2C46F2FA23971A990094790D /* SimpleNetworking+GetMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F923971A990094790D /* SimpleNetworking+GetMethods.swift */; };
-		2C61CE1D23971B5400382261 /* SimpleNetworking+PostMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61CE1C23971B5400382261 /* SimpleNetworking+PostMethods.swift */; };
+		2C46F2FA23971A990094790D /* SN+GetMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2F923971A990094790D /* SN+GetMethods.swift */; };
+		2C61CE1D23971B5400382261 /* SN+PostMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61CE1C23971B5400382261 /* SN+PostMethods.swift */; };
 		2C61CE1F23971FEE00382261 /* RequestMethodTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61CE1E23971FEE00382261 /* RequestMethodTypes.swift */; };
 		2C61CE212397201600382261 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61CE202397201600382261 /* Requests.swift */; };
+		2C75A02323A6F57200452660 /* SN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75A02223A6F57200452660 /* SN.swift */; };
+		2C75A02523A6F60E00452660 /* SN+PutMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75A02423A6F60E00452660 /* SN+PutMethods.swift */; };
+		2C75A02723A6F63700452660 /* SN+DeleteMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75A02623A6F63700452660 /* SN+DeleteMethods.swift */; };
 		2CCE6E06239CAE830054693E /* RequestMethodTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE6E05239CAE830054693E /* RequestMethodTypesTests.swift */; };
 		2CCE6E09239CB05F0054693E /* EncodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE6E08239CB05F0054693E /* EncodableTests.swift */; };
 		2CCE6E0B239CB0860054693E /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE6E0A239CB0860054693E /* MockData.swift */; };
@@ -51,10 +54,13 @@
 		2C46F2F12396B94A0094790D /* ResultBlocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultBlocks.swift; sourceTree = "<group>"; };
 		2C46F2F22396B94A0094790D /* SimpleNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetworking.swift; sourceTree = "<group>"; };
 		2C46F2F32396B94A0094790D /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
-		2C46F2F923971A990094790D /* SimpleNetworking+GetMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleNetworking+GetMethods.swift"; sourceTree = "<group>"; };
-		2C61CE1C23971B5400382261 /* SimpleNetworking+PostMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleNetworking+PostMethods.swift"; sourceTree = "<group>"; };
+		2C46F2F923971A990094790D /* SN+GetMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SN+GetMethods.swift"; sourceTree = "<group>"; };
+		2C61CE1C23971B5400382261 /* SN+PostMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SN+PostMethods.swift"; sourceTree = "<group>"; };
 		2C61CE1E23971FEE00382261 /* RequestMethodTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethodTypes.swift; sourceTree = "<group>"; };
 		2C61CE202397201600382261 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		2C75A02223A6F57200452660 /* SN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SN.swift; sourceTree = "<group>"; };
+		2C75A02423A6F60E00452660 /* SN+PutMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SN+PutMethods.swift"; sourceTree = "<group>"; };
+		2C75A02623A6F63700452660 /* SN+DeleteMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SN+DeleteMethods.swift"; sourceTree = "<group>"; };
 		2CCE6E05239CAE830054693E /* RequestMethodTypesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethodTypesTests.swift; sourceTree = "<group>"; };
 		2CCE6E08239CB05F0054693E /* EncodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableTests.swift; sourceTree = "<group>"; };
 		2CCE6E0A239CB0860054693E /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
@@ -87,8 +93,10 @@
 		2C2DCA1A239727C800CE1A22 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2C46F2F923971A990094790D /* SimpleNetworking+GetMethods.swift */,
-				2C61CE1C23971B5400382261 /* SimpleNetworking+PostMethods.swift */,
+				2C46F2F923971A990094790D /* SN+GetMethods.swift */,
+				2C61CE1C23971B5400382261 /* SN+PostMethods.swift */,
+				2C75A02423A6F60E00452660 /* SN+PutMethods.swift */,
+				2C75A02623A6F63700452660 /* SN+DeleteMethods.swift */,
 				2C2DCA1B23972C0000CE1A22 /* Encodable+Extensions.swift */,
 			);
 			path = Extensions;
@@ -144,6 +152,7 @@
 				2C2DCA1A239727C800CE1A22 /* Extensions */,
 				2C61CE1B23971AF600382261 /* Helpers */,
 				2C46F2F22396B94A0094790D /* SimpleNetworking.swift */,
+				2C75A02223A6F57200452660 /* SN.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -273,14 +282,17 @@
 			files = (
 				2C46F2F62396B94A0094790D /* ResultBlocks.swift in Sources */,
 				2C46F2F82396B94A0094790D /* Thread.swift in Sources */,
+				2C75A02323A6F57200452660 /* SN.swift in Sources */,
 				2C61CE1F23971FEE00382261 /* RequestMethodTypes.swift in Sources */,
+				2C75A02723A6F63700452660 /* SN+DeleteMethods.swift in Sources */,
 				2C61CE212397201600382261 /* Requests.swift in Sources */,
 				2C46F2F42396B94A0094790D /* Errors.swift in Sources */,
 				2C46F2F72396B94A0094790D /* SimpleNetworking.swift in Sources */,
+				2C75A02523A6F60E00452660 /* SN+PutMethods.swift in Sources */,
 				2C46F2EC2396A8C20094790D /* Validator.swift in Sources */,
 				2C2DCA1C23972C0000CE1A22 /* Encodable+Extensions.swift in Sources */,
-				2C61CE1D23971B5400382261 /* SimpleNetworking+PostMethods.swift in Sources */,
-				2C46F2FA23971A990094790D /* SimpleNetworking+GetMethods.swift in Sources */,
+				2C61CE1D23971B5400382261 /* SN+PostMethods.swift in Sources */,
+				2C46F2FA23971A990094790D /* SN+GetMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
