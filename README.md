@@ -47,7 +47,7 @@ Perform your request expecting the given model as the result:
 let endpoint = "https://jsonplaceholder.typicode.com/todos/1"
 
 // 2. Put your Codable type in the result block, in this example, your type is the *User* model.
-SimpleNetworking.get(endpoint: endpoint) { [weak self] (response: SNResult<User>) in
+SN.get(endpoint: endpoint) { [weak self] (response: SNResult<User>) in
 	switch response {
 	case .error(let error):
 		// 3. Hanlde the possible error.
