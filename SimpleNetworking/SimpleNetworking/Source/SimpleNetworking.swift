@@ -24,7 +24,7 @@ public class SimpleNetworking {
     }
     
     public static func setAuthenticationHeader(prefix: String, token: String) {
-        SimpleNetworking.defaultHeaders["Authentication"] = "\(prefix) \(token)"
+        SimpleNetworking.defaultHeaders["Authorization"] = "\(prefix) \(token)"
     }
 }
 
