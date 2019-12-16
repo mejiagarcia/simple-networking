@@ -40,7 +40,7 @@ struct MockData {
     
     struct AuthenticationHeader {
         static let prefix = "Bearer"
-        static let key = "Authentication"
+        static let key = "Authorization"
         static let token = "TOKEN"
         static let value = "Bearer TOKEN"
     }
