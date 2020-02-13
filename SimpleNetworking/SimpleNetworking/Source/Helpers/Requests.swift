@@ -16,6 +16,8 @@ class Requests {
         
         request.httpBody = model?.toJSONData()
         
+        DebugMode.printRequest(request)
+        
         return request
     }
 }
