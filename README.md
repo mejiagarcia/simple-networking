@@ -12,6 +12,7 @@ Forget about all serialization logic, mappers and old networking stuff, Simple-N
 -  [Installation](#installation)
 -  [Perform GET/POST request](#usage)
 -  [Headers](#headers)
+-  [Debug Mode](#debug)
 -  [Documentation](#documentation)
 
 ## Example
@@ -164,6 +165,30 @@ Calling this method will result in:
 
 ```Authentication: Bearer TOKEN```
 
+### Debug
+We provide a debug mode in order to see in detail all your requests through the Pod in Xcode console, this is how it works:
+
+1. Check only your API responses:
+```swift
+SimpleNetworking.debugMode = .onlyResponses
+```
+
+<img src="./Screenshots/response_example.png" width="500px"/>
+
+2. Check only your API requests:
+```swift
+SimpleNetworking.debugMode = .onlyRequests
+```
+
+<img src="./Screenshots/request_example.png" width="500px"/>
+
+3. Check all your requests and responses from your API:
+```swift
+SimpleNetworking.debugMode = .all
+```
+
+By default debug mode is `disabled`.
+
 ## Documentation
 *SNResult*
 ```swift
@@ -173,7 +198,7 @@ public enum SNResult<T: Codable> {
 }
 ```
 
-*SNResult*
+*SNResultWithEntity*
 ```swift
 public  enum  SNResultWithEntity<T: Codable, Y: Codable> {
 	case success(response: T)
