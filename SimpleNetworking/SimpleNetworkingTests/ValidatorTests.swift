@@ -23,6 +23,12 @@ class ValidatorTests: XCTestCase {
        XCTAssertFalse(isValidResponse, "Validator is working for invalid staus code! :(")
    }
     
+    func testNilResponseValidation() {
+        let isValidResponse = SimpleNetworkingValidator.isValidStatusCode(response: nil)
+                 
+         XCTAssertFalse(isValidResponse, "Validator is working for nil responses! :(")
+    }
+    
     func testInvalidValidation() {
         let isValidResponse = SimpleNetworkingValidator.isValidStatusCode(response: nil)
              
