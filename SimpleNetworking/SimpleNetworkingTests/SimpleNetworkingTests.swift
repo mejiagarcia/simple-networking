@@ -58,7 +58,7 @@ class SimpleNetworkingTests: XCTestCase {
     func testGETRequestErrors() {
         let endpoint = "https://jsonplaceholder.typicode.com/todos"
         
-        SN.get(endpoint: endpoint) { [weak self] (response: SNResult<MockData.User>) in
+        SN.get(endpoint: endpoint) { [weak self] (response: SNResult<[MockData.User]>) in
             switch response {
             case .error(let error):
                 switch error {
