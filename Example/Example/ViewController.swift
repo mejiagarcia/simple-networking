@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SimpleNetworking.debugMode = .onlyRequests
+        SimpleNetworking.debugMode = .all
         
         getMyData()
         getDataWithError()
