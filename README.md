@@ -231,7 +231,7 @@ public  enum  SNErrors: Error {
 ## Author
 Carlos Mejía, carlosmejia083@gmail.com
 
-https://twitter.com/lcmejiaga
+https://twitter.com/carlosmejia083
 
 ## License
 SimpleNetworking is available under the MIT license. See the LICENSE file for more info.
