@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C198D2123F4D41100346395 /* DebugMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C198D2023F4D41100346395 /* DebugMode.swift */; };
+		2C1CBA692411FF9C00E3B722 /* NSURLSessionPinningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1CBA682411FF9C00E3B722 /* NSURLSessionPinningDelegate.swift */; };
+		2C1CBA6B2412062A00E3B722 /* SSLConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1CBA6A2412062A00E3B722 /* SSLConfig.swift */; };
 		2C2DCA1C23972C0000CE1A22 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2DCA1B23972C0000CE1A22 /* Encodable+Extensions.swift */; };
 		2C46F2AB2395F0C00094790D /* SimpleNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C46F2A12395F0C00094790D /* SimpleNetworking.framework */; };
 		2C46F2B22395F0C00094790D /* SimpleNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C46F2A42395F0C00094790D /* SimpleNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		2C198D2023F4D41100346395 /* DebugMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugMode.swift; sourceTree = "<group>"; };
+		2C1CBA682411FF9C00E3B722 /* NSURLSessionPinningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSURLSessionPinningDelegate.swift; sourceTree = "<group>"; };
+		2C1CBA6A2412062A00E3B722 /* SSLConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLConfig.swift; sourceTree = "<group>"; };
 		2C2DCA1B23972C0000CE1A22 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
 		2C46F2A12395F0C00094790D /* SimpleNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C46F2A42395F0C00094790D /* SimpleNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleNetworking.h; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				2C61CE1E23971FEE00382261 /* RequestMethodTypes.swift */,
 				2C61CE202397201600382261 /* Requests.swift */,
 				2C198D2023F4D41100346395 /* DebugMode.swift */,
+				2C1CBA682411FF9C00E3B722 /* NSURLSessionPinningDelegate.swift */,
+				2C1CBA6A2412062A00E3B722 /* SSLConfig.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 			files = (
 				2C46F2F62396B94A0094790D /* ResultBlocks.swift in Sources */,
 				2C46F2F82396B94A0094790D /* Thread.swift in Sources */,
+				2C1CBA6B2412062A00E3B722 /* SSLConfig.swift in Sources */,
 				2C75A02323A6F57200452660 /* SN.swift in Sources */,
 				2C61CE1F23971FEE00382261 /* RequestMethodTypes.swift in Sources */,
 				2C75A02723A6F63700452660 /* SN+DeleteMethods.swift in Sources */,
@@ -293,6 +300,7 @@
 				2C46F2F42396B94A0094790D /* Errors.swift in Sources */,
 				2C46F2F72396B94A0094790D /* SimpleNetworking.swift in Sources */,
 				2C75A02523A6F60E00452660 /* SN+PutMethods.swift in Sources */,
+				2C1CBA692411FF9C00E3B722 /* NSURLSessionPinningDelegate.swift in Sources */,
 				2C46F2EC2396A8C20094790D /* Validator.swift in Sources */,
 				2C2DCA1C23972C0000CE1A22 /* Encodable+Extensions.swift in Sources */,
 				2C61CE1D23971B5400382261 /* SN+PostMethods.swift in Sources */,

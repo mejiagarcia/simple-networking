@@ -17,9 +17,16 @@ public enum SNDebugMode {
 
 public class SimpleNetworking {
     // MARK: - Properties
+    public static var customSession: URLSession?
     public static var currentTask: URLSessionTask?
     public static let decoder = JSONDecoder()
-    public static let session = URLSession.shared
+    
+    public static var session: URLSession {
+        return customSession ?? URLSession(configuration: URLSessionConfiguration.default,
+                                           delegate: URLSessionPinningDelegate(),
+                                           delegateQueue: nil)
+    }
+    
     public static var debugMode: SNDebugMode = .disabled
     
     public static var defaultHeaders: NSMutableDictionary = [
@@ -33,6 +40,16 @@ public class SimpleNetworking {
     
     public static func setAuthenticationHeader(prefix: String, token: String) {
         SimpleNetworking.defaultHeaders["Authorization"] = "\(prefix) \(token)"
+    }
+    
+    /// Use this method to setup a SSL pinning implementation, it's really important provide the full path of the certificate, for that, use a Bundle to get the full path of the file.
+    /// - Parameters:
+    ///   - certificateFullPath:Full path of the certificate
+    /// ~~~
+    /// let myPath: String? = Bundle.main.path(forResource:  "my_cer", ofType: ".cer")
+    /// ~~~
+    public static func setupSSLPinnig(certificateFullPath: String) {
+        SSLConfig.certificatePath = certificateFullPath
     }
 }
 
