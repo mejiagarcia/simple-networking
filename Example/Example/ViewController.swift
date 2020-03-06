@@ -23,15 +23,23 @@ struct ServerError: Codable {
     let serverError: String
 }
 
+struct UserList: Codable {
+    let items: [StackOverFlowUser]
+}
+
+struct StackOverFlowUser: Codable {
+    let display_name: String
+}
+
 /*
  End
-*/
+ */
 
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var humanNameLabel: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,10 +48,46 @@ class ViewController: UIViewController {
         getMyData()
         getDataWithError()
         postData()
+        
+        // Uncomment next line in order to test SSL Pinning example
+        //setupSSLPinning()
+    }
+    
+    /*
+     Just an example about how to setup an SSL certificate
+     */
+    private func setupSSLPinning() {
+        // "stackexchange.com" is the certificate name
+        if let certPath = Bundle.main.path(forResource: "stackexchange.com", ofType: ".der") {
+            SimpleNetworking.setupSSLPinnig(certificateFullPath: certPath)
+            
+            performSSLPinningRequest()
+        }
+    }
+    
+    /*
+     This request should work only with the pinned certificate.
+     */
+    private func performSSLPinningRequest() {
+        // 1. Prepare your endpoint.
+        let endpoint = "https://api.stackexchange.com/2.2/users?order=desc&sort=reputation&site=stackoverflow"
+        
+        // 2. Make the request
+        SN.get(endpoint: endpoint) { (response: SNResult<UserList>) in
+            
+            switch response {
+            case .error(let error):
+                // 3. Hanlde the possible error.
+                print(error.localizedDescription)
+                
+            case .success:
+                print("Stackoverflow users! - SSL Pinning works! 😁😁😁😁😁😁")
+            }
+        }
     }
     
     // MARK: - GET Examples
-
+    
     private func getMyData() {
         // 1. Prepare your endpoint.
         let endpoint = "https://jsonplaceholder.typicode.com/todos/1"

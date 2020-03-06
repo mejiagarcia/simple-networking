@@ -13,6 +13,7 @@ Forget about all serialization logic, mappers and old networking stuff, Simple-N
 -  [Perform GET/POST request](#usage)
 -  [Headers](#headers)
 -  [Debug Mode](#debug)
+-  [SSL Pinning](#ssl-pinning)
 -  [Documentation](#documentation)
 
 ## Example
@@ -188,6 +189,17 @@ SimpleNetworking.debugMode = .all
 ```
 
 By default debug mode is `disabled`.
+
+## SSL-Pinning
+We support certificate pinning (available in v0.3.5), we are still working in Public Key pinning support (PR's are welcome). In order to setup your certificate you have to call `setupSSLPinnig` method:
+
+```swift
+if let certPath = Bundle.main.path(forResource: "my_cert", ofType: ".der") {
+	SimpleNetworking.setupSSLPinnig(certificateFullPath: certPath)
+}
+```
+
+This method will compare the remote certificate against your local certificate. The remote certificate is obtained from the Host you are targeting in the request.
 
 ## Documentation
 *SNResult*

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1CBA6E24120C8600E3B722 /* stackexchange.com.der in Resources */ = {isa = PBXBuildFile; fileRef = 2C1CBA6D24120C8600E3B722 /* stackexchange.com.der */; };
 		2C46F2C82395F0DA0094790D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2C72395F0DA0094790D /* AppDelegate.swift */; };
 		2C46F2CC2395F0DA0094790D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46F2CB2395F0DA0094790D /* ViewController.swift */; };
 		2C46F2CF2395F0DA0094790D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C46F2CD2395F0DA0094790D /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C1CBA6D24120C8600E3B722 /* stackexchange.com.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = stackexchange.com.der; sourceTree = "<group>"; };
 		2C46F2C42395F0DA0094790D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C46F2C72395F0DA0094790D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C46F2CB2395F0DA0094790D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1CBA6C24120C6800E3B722 /* Example SSL Pinning Certificate */ = {
+			isa = PBXGroup;
+			children = (
+				2C1CBA6D24120C8600E3B722 /* stackexchange.com.der */,
+			);
+			path = "Example SSL Pinning Certificate";
+			sourceTree = "<group>";
+		};
 		2C46F2BB2395F0DA0094790D = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		2C46F2C62395F0DA0094790D /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				2C1CBA6C24120C6800E3B722 /* Example SSL Pinning Certificate */,
 				2C46F2C72395F0DA0094790D /* AppDelegate.swift */,
 				2C46F2CB2395F0DA0094790D /* ViewController.swift */,
 				2C46F2CD2395F0DA0094790D /* Main.storyboard */,
@@ -150,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1CBA6E24120C8600E3B722 /* stackexchange.com.der in Resources */,
 				2C46F2D42395F0DB0094790D /* LaunchScreen.storyboard in Resources */,
 				2C46F2D12395F0DB0094790D /* Assets.xcassets in Resources */,
 				2C46F2CF2395F0DA0094790D /* Main.storyboard in Resources */,
