@@ -22,8 +22,10 @@ public class SimpleNetworking {
     public static let decoder = JSONDecoder()
     
     public static var session: URLSession {
+        let delegate: URLSessionDelegate? = SSLConfig.certificatePath == nil ? nil : URLSessionPinningDelegate()
+        
         return customSession ?? URLSession(configuration: URLSessionConfiguration.default,
-                                           delegate: URLSessionPinningDelegate(),
+                                           delegate: delegate,
                                            delegateQueue: nil)
     }
     
