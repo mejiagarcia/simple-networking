@@ -20,12 +20,26 @@ Forget about all serialization logic, mappers and old networking stuff, Simple-N
 To run the example project, clone the repo, open `SimpleNetworking.xcworkspace` and open the Example target.
 
 ## Installation
-SimpleBinding is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+
+### Cocoapods
+
+SimpleNetworking is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
 
 pod 'Simple-Networking'
 
+```
+
+### Swift Package Manager
+
+SimpleNetworking is available through [Swift Package Manager](https://swift.org/package-manager/). To install
+it, simply add the following line to your `Package.swift` or your xcode project configuration.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/mejiagarcia/simple-networking.git", .upToNextMajor(from: "0.3.9"))
+]
 ```
 
 ## Usage
@@ -239,11 +253,6 @@ public  enum  SNErrors: Error {
 	case unknown(error: String?)
 }
 ```
-
-## Author
-Carlos Mejía, carlosmejia083@gmail.com
-
-https://twitter.com/carlosmejia083
 
 ## License
 SimpleNetworking is available under the MIT license. See the LICENSE file for more info.
