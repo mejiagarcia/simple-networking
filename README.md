@@ -1,3 +1,4 @@
+# Hey folks, thanks for checking this repo! So, I made this library for an online iOS course I teached back in 2019, I do not maintain this library, nor recommend using it. These days all you need is URLSession and a fancy await/async usage. Happy coding!
 
 # Simple-Networking
 
